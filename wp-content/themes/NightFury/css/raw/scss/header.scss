@@ -1,0 +1,26 @@
+@import "modules.scss";
+header{
+	.navbar-default{
+		background-color: $blue;
+		background-image: none; 
+		border-radius: 0px;
+		.container{
+			.navbar-header{
+				.navbar-brand{
+					padding: 5px 10px; 
+					img{
+						max-height: 100%;
+					}
+				}
+			}
+			.navbar-nav{
+				li {
+					a {
+						color: #fff;
+						text-shadow: 0 1px 0 rgba(134, 120, 120, 1);
+					}
+				}
+			}
+		}
+	}
+}

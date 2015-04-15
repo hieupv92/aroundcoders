@@ -1,0 +1,30 @@
+@import "modules.scss";
+#homepage{
+	.post{
+		.title{
+			@extend .post_title;
+		}
+		.panel-body {
+			.info{
+				@extend .post_info;
+			}
+			.post-thumbnail {
+				margin-top: 15px;
+				img{
+					max-width: 100%;
+					max-height: 250px;
+				}
+			}
+			.post-content{
+				margin-top: 15px;
+				font-size: 15px;
+				line-height: 1.4;
+				text-align: justify;
+			}
+		}
+	}
+	.sidebar{
+		@extend .sidebar-block;
+	}
+}
+

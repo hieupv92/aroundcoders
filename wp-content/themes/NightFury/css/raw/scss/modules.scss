@@ -1,0 +1,51 @@
+$blue: #2aabd2;
+$gray: #8899a6;
+$black: #333;
+$sidebar_title_color: #777;
+$text_size_small: 12px;
+$text_size_normal: 14px;
+$text_size_big: 16px;
+$text_size_huge: 22px;
+
+.post_title{
+	font-size: $text_size_huge;
+	a {
+		color: $black;
+	}
+	a:hover {
+		color: $black;
+		text-decoration: underline;
+	}
+}
+.post_info {
+	overflow: auto;
+	border-bottom: 1px dashed #C8C8C8;
+	padding-bottom: 10px;
+	color: $gray;
+	font-size: $text_size_small;
+	.posttime {
+		margin-left: 20px;
+	}
+	.glyphicon {
+		margin-right: 5px;
+	}
+}
+.arrow-right:after {
+	display: block;
+	content: '';
+	background: url('../../../images/arrow-right.png') no-repeat;
+	background-size: 100%;
+	float: right;
+	margin-left: 10px;
+	opacity: 0.15;
+}
+.sidebar-block {
+	.panel-heading{
+		color: $sidebar_title_color;
+	}
+	.panel-body {
+		.question {
+			padding-left: 15px;
+		}
+	}
+}

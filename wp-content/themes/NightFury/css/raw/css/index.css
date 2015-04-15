@@ -1,0 +1,45 @@
+.post_title, #homepage .post .title {
+  font-size: 22px; }
+  .post_title a, #homepage .post .title a {
+    color: #333; }
+  .post_title a:hover, #homepage .post .title a:hover {
+    color: #333;
+    text-decoration: underline; }
+
+.post_info, #homepage .post .panel-body .info {
+  overflow: auto;
+  border-bottom: 1px dashed #C8C8C8;
+  padding-bottom: 10px;
+  color: #8899a6;
+  font-size: 12px; }
+  .post_info .posttime, #homepage .post .panel-body .info .posttime {
+    margin-left: 20px; }
+  .post_info .glyphicon, #homepage .post .panel-body .info .glyphicon {
+    margin-right: 5px; }
+
+.arrow-right:after {
+  display: block;
+  content: '';
+  background: url("../../../images/arrow-right.png") no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-left: 10px;
+  opacity: 0.15; }
+
+.sidebar-block .panel-heading, #homepage .sidebar .panel-heading {
+  color: #777; }
+.sidebar-block .panel-body .question, #homepage .sidebar .panel-body .question {
+  padding-left: 15px; }
+
+#homepage .post .panel-body .post-thumbnail {
+  margin-top: 15px; }
+  #homepage .post .panel-body .post-thumbnail img {
+    max-width: 100%;
+    max-height: 250px; }
+#homepage .post .panel-body .post-content {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: justify; }
+
+/*# sourceMappingURL=index.css.map */

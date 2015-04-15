@@ -1,0 +1,11 @@
+body {
+  background-color: #f0f0f0;
+  padding-top: 60px; }
+
+blockquote {
+  font-size: 14px; }
+
+.fb-comments, .fb-comments iframe[style], .fb-comments span {
+  width: 100% !important; }
+
+/*# sourceMappingURL=template.css.map */

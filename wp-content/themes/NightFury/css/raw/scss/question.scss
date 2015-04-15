@@ -1,0 +1,50 @@
+@import "modules.scss";
+#question {
+	.post{
+		.panel-heading {
+			padding: 0px;
+			.breadcrum {
+				display: inline-block;
+				margin: 0px;
+				padding: 0px;
+				li {
+					margin: 0px;
+					display: inline-block;
+					line-height: 35px;
+					a {
+						color: $gray;
+					}
+					a:hover {
+						color: $gray;
+						text-decoration: none;
+					}
+					@extend .arrow-right;
+				}
+				li:after{
+					width: 12px;
+					height: 35px;
+				}
+				li:first-child {
+					padding-left: 15px;
+				}
+			}
+		}
+		.panel-body {
+			.title{
+				@extend .post_title;
+			}
+			.info {
+				@extend .post_info;
+			}
+			.content{
+				margin-top: 15px;
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+	}
+	.sidebar{
+		@extend .sidebar-block;
+	}
+}

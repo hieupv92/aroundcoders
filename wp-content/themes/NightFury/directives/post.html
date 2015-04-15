@@ -1,0 +1,38 @@
+<div id="single-post" ng-show="post != undefined">
+	<div class="container">
+		<div class="col-md-9 col-sm-8 col-xs-12 post">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<ul class="breadcrum">
+						<li>
+							<a href="/">
+								<span class="glyphicon glyphicon-home"></span>
+							</a>
+						</li>
+						<li><a href="" ng-bind="post.title | shortContent:30"></a></li>
+					</ul>
+				</div>
+				<div class="panel-body">
+					<div class="title">
+						<strong ng-bind="post.title"></strong>
+					</div>
+					<div class="info">
+						<div class="postby pull-left">
+							<span class="glyphicon glyphicon-user"></span>
+							<span ng-bind="post.author.name"></span>
+						</div>
+						<div class="posttime pull-left">
+							<span class="glyphicon glyphicon-time"></span>
+							<span ng-bind="post.date"></span>
+						</div>
+					</div>
+					<div class="content" ng-bind-html="post.content | unsafe"></div>
+				</div>
+			</div>
+			<fb-comment id="fbcomment" num-posts="10"></fb-comment>
+		</div>
+		<div class="col-md-3 col-sm-4 hidden-xs sidebar">
+			<question-block category-name="questions" number-posts="10"></question-block>
+		</div>
+	</div>
+</div>
